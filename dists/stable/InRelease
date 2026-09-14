@@ -1,0 +1,39 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: amd64
+Codename: stable
+Components: main
+Date: Mon, 14 Sep 2026 19:07:23 +0000
+Description: Edge Notes, a notes widget docked to the edge of your screen
+Label: Edge Notes
+Origin: Edge Notes
+Suite: stable
+MD5Sum:
+ 402f38c38c9867b6b0fb33164147d0bf              778 main/binary-amd64/Packages
+ 41ccb09fd9253dca8646feefbbc1005d              526 main/binary-amd64/Packages.gz
+SHA1:
+ c5318a23462fa4785944f6f942cb6df19405f94a              778 main/binary-amd64/Packages
+ 8f749b2e62243dd0f9975514b166adaf364e56b7              526 main/binary-amd64/Packages.gz
+SHA256:
+ fef054094403e481e78881ec961a0d80f383d77cdecdd42bfe6d95468f938923              778 main/binary-amd64/Packages
+ acf88a89b399a010e677d5053815dd5fb256835db6b3e95fafb6151e12b8fea6              526 main/binary-amd64/Packages.gz
+SHA512:
+ 76dce847b9e66ad59f9821338ee2eceef69154d46accc55de1786d286d6e595af3db3ec6a7212ae3fb931a20f4c4f9e039e4be48356835b632af5d4fb0d8e309              778 main/binary-amd64/Packages
+ 2ba782452e670ee13095a67d37f8e0497b902515566004e4f7cd6da2cf6edde5587bcd131ebe9a1a9b88d6a770c8b3ef4adf460f3d52f3bbdd54d70b517f9160              526 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEunF+qvyBmrqw7WtRek76/12sAHwFAmqoResACgkQek76/12s
+AHyDohAAvIVaABkcHKT2tSV/5P9YrW2EbSxD3WtmsSTCzCkRg1TZY2tBo60XgvAC
+Zv+dtVtDcH8y09T+/M3WpPgQNTxpZJJM579qVep3I/7voxQ6HUPjY6zNSEP8+0ZA
+mSPZud7J5Smf6sH854NQ/LA5v5dRiBDsw7/JKL322MOHXPUClD1jZZ6ohgdJmc9H
+yllMfc9FqPwaUOEraLqzthC8XlAvyBV7TT5rSeCtURL417RX8/WF1Nvm3pm3/EOq
+cdeZUtAKXeXSZ2+MBzyuqftc1w9zb9YxGpG8/mEL0uiqAZiz0/UnmlgPUhHGPVft
+Jcp6YILIB24AusliBngNZDsEDg5ARoPF7GJ2919mJz9hxhBrT8J0pp2T4GbHX1Ke
+fFcXRgWwhzma0L7I8QBsOA7tvrTQ3P++Rbt8PwawTFQpPWnXZMqDlvtS00mipl2v
+6v7LoR/fWAgcjVZQazbST6j4RzMCsV93G1FT4F1UWnyQQZuhO8137zMqYYAT1vhk
+p0TM8bw9AGLHz6ydq2JTwxDvTHV8j4VIPLWCVA6ma/G4rl1IA3D2A9QkYza1pZtE
+EHMpEnNt+kEcP5DhMmuARr2YL8YSP1n5EDEG6aPvtXHyognYlzW4+gQHa5c/drQC
+Be6YlKmYWx75UoJ4pnmzt6hr5lXaY8NDmj8DdHr1Ww6de/9PpKQ=
+=PF/S
+-----END PGP SIGNATURE-----

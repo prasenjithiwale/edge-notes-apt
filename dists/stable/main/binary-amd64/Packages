@@ -1,0 +1,16 @@
+Package: edge-notes
+Architecture: amd64
+Version: 0.0.3
+Priority: optional
+Maintainer: Edge Notes
+Installed-Size: 6181
+Depends: libappindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Filename: pool/main/e/edge-notes/edge-notes_0.0.3_amd64.deb
+Size: 2865192
+MD5sum: 117d48c0bf83c6a4e78f878dc1002a7e
+SHA1: 0f8d90657b7b5b87064d29f6d4f47280a18d887f
+SHA256: bfdbc11440939b1c3b72b88e4f560a90172117b97d4bfc71b656dc9f560a5254
+SHA512: 3e412fdd09f5cb3a51154fe9b50b4a6d1e0b2daa6223a1eac739b51c6c69a3428354b2b0b9b4518de1ed8d3981650ba899ef23500659e411879e6b83dced0c8c
+Description: Notes on the edge of your screen
+ A notes widget docked to the edge of your screen. Point at the tab and a panel of colour-coded notes slides out; move away and it slides back. Notes are stored locally in SQLite.
+
