@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edge Notes APT repository</title>
+<style>
+  :root { color-scheme: light dark; --bg:#fff; --fg:#1d1d1f; --muted:#6e6e73; --code:#f4f4f5; --border:rgba(0,0,0,.08); }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1c1c1e; --fg:#f2f2f3; --muted:#a1a1a6; --code:#2a2a2d; --border:rgba(255,255,255,.08); } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.55 system-ui,-apple-system,"Segoe UI",Ubuntu,Cantarell,sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:48px 20px; }
+  h1 { font-size:24px; font-weight:600; margin:0 0 4px; }
+  h2 { font-size:16px; font-weight:600; margin:32px 0 8px; }
+  p { margin:8px 0; color:var(--muted); }
+  pre { background:var(--code); border:1px solid var(--border); border-radius:10px; padding:14px 16px; overflow-x:auto; font-size:13px; line-height:1.6; color:var(--fg); }
+  code { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  a { color:inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Edge Notes APT repository</h1>
+  <p>Signed Debian packages of <a href="https://github.com/prasenjithiwale/edge-notes">Edge Notes</a>, a notes widget docked to the edge of your screen.</p>
+
+  <h2>Install</h2>
+  <p>Debian 12+, Ubuntu 22.04+, Kubuntu and derivatives, x86_64.</p>
+<pre><code>sudo install -d -m 0755 /etc/apt/keyrings
+curl -fsSL https://prasenjithiwale.github.io/edge-notes-apt/key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/edge-notes.gpg
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/edge-notes.gpg] https://prasenjithiwale.github.io/edge-notes-apt stable main" \
+  | sudo tee /etc/apt/sources.list.d/edge-notes.list
+sudo apt update
+sudo apt install edge-notes</code></pre>
+  <p>New versions arrive with <code>sudo apt update &amp;&amp; sudo apt upgrade</code>.</p>
+
+  <h2>Remove</h2>
+<pre><code>sudo apt remove edge-notes
+sudo rm /etc/apt/sources.list.d/edge-notes.list /etc/apt/keyrings/edge-notes.gpg</code></pre>
+
+  <h2>Signing key</h2>
+  <p>Edge Notes APT repository, RSA 4096, fingerprint <code>BA717EAAFC819ABAB0ED6B517A4EFAFF5DAC007C</code>.</p>
+</main>
+</body>
+</html>
