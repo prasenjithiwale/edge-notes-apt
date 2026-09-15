@@ -31,8 +31,12 @@
   <p>macOS 12 Monterey or later, Apple silicon and Intel in one build. Version
   0.0.4. Homebrew is the easier route, and brings new versions
   with <code>brew upgrade</code>:</p>
-<pre><code>brew tap prasenjithiwale/tap
-brew install --cask edge-notes</code></pre>
+<pre><code>brew trust --cask prasenjithiwale/tap/edge-notes
+brew install --cask prasenjithiwale/tap/edge-notes</code></pre>
+  <p>Homebrew will not load a cask from a tap outside its own repositories until
+  you say you trust it, which is what the first line is; the second adds the tap
+  and installs. Afterwards it is just <code>edge-notes</code>, as in
+  <code>brew upgrade edge-notes</code>.</p>
   <p>Or take the disk image and drag the app to Applications:</p>
   <p class="downloads">
     <a class="download" href="https://prasenjithiwale.github.io/edge-notes-apt/macos/Edge-Notes_0.0.4_macOS_universal.dmg">Disk image (.dmg) &middot; 4.8 MB</a>
