@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Edge Notes APT repository</title>
+<title>Edge Notes downloads</title>
 <style>
   :root { color-scheme: light dark; --bg:#fff; --fg:#1d1d1f; --muted:#6e6e73; --code:#f4f4f5; --border:rgba(0,0,0,.08); }
   @media (prefers-color-scheme: dark) { :root { --bg:#1c1c1e; --fg:#f2f2f3; --muted:#a1a1a6; --code:#2a2a2d; --border:rgba(255,255,255,.08); } }
@@ -15,29 +15,50 @@
   pre { background:var(--code); border:1px solid var(--border); border-radius:10px; padding:14px 16px; overflow-x:auto; font-size:13px; line-height:1.6; color:var(--fg); }
   code { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
   a { color:inherit; }
+  .downloads { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; }
+  .download { display:inline-block; background:var(--code); border:1px solid var(--border); border-radius:10px; padding:10px 14px; color:var(--fg); text-decoration:none; font-weight:600; }
+  .download:hover { border-color:var(--muted); }
 </style>
 </head>
 <body>
 <main>
-  <h1>Edge Notes APT repository</h1>
-  <p>Signed Debian packages of <a href="https://github.com/prasenjithiwale/edge-notes">Edge Notes</a>, a notes widget docked to the edge of your screen.</p>
+  <h1>Edge Notes</h1>
+  <p>A notes widget docked to the edge of your screen. Point at the tab and a
+  panel of colour-coded notes slides out; move away and it slides back.
+  <a href="https://github.com/prasenjithiwale/edge-notes">About the project</a>.</p>
 
-  <h2>Install</h2>
-  <p>Debian 12+, Ubuntu 22.04+, Kubuntu and derivatives, x86_64.</p>
+  <h2>Windows</h2>
+  <p>Windows 10 and 11, 64-bit. Version 0.0.4.</p>
+  <p class="downloads">
+    <a class="download" href="https://prasenjithiwale.github.io/edge-notes-apt/windows/Edge-Notes_0.0.4_windows_x64-setup.exe">Installer (.exe) &middot; 1.8 MB</a>
+    <a class="download" href="https://prasenjithiwale.github.io/edge-notes-apt/windows/Edge-Notes_0.0.4_windows_x64.msi">Package (.msi) &middot; 2.5 MB</a>
+  </p>
+  <p>The installer is the usual choice; the <code>.msi</code> is there for
+  deploying it across a fleet. Both install the same app, and fetch the WebView2
+  runtime if Windows does not already have it.</p>
+  <p>These builds are not code-signed, so SmartScreen warns the first time:
+  choose <b>More info</b>, then <b>Run anyway</b>. To check a download first,
+  compare it with <a href="https://prasenjithiwale.github.io/edge-notes-apt/windows/SHA256SUMS">SHA256SUMS</a>
+  (<code>Get-FileHash</code> in PowerShell).</p>
+
+  <h2>Debian and Ubuntu</h2>
+  <p>Debian 12+, Ubuntu 22.04+, Kubuntu and derivatives, x86_64. Version
+  0.0.4. Installing from this repository means new versions arrive
+  with <code>sudo apt update &amp;&amp; sudo apt upgrade</code>.</p>
 <pre><code>sudo install -d -m 0755 /etc/apt/keyrings
 curl -fsSL https://prasenjithiwale.github.io/edge-notes-apt/key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/edge-notes.gpg
 echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/edge-notes.gpg] https://prasenjithiwale.github.io/edge-notes-apt stable main" \
   | sudo tee /etc/apt/sources.list.d/edge-notes.list
 sudo apt update
 sudo apt install edge-notes</code></pre>
-  <p>New versions arrive with <code>sudo apt update &amp;&amp; sudo apt upgrade</code>.</p>
 
-  <h2>Remove</h2>
+  <h2>Removing it</h2>
 <pre><code>sudo apt remove edge-notes
 sudo rm /etc/apt/sources.list.d/edge-notes.list /etc/apt/keyrings/edge-notes.gpg</code></pre>
 
   <h2>Signing key</h2>
-  <p>Edge Notes APT repository, RSA 4096, fingerprint <code>BA717EAAFC819ABAB0ED6B517A4EFAFF5DAC007C</code>.</p>
+  <p>The APT repository is signed by &quot;Edge Notes APT repository&quot;, RSA
+  4096, fingerprint <code>BA717EAAFC819ABAB0ED6B517A4EFAFF5DAC007C</code>.</p>
 </main>
 </body>
 </html>

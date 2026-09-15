@@ -4,36 +4,40 @@ Hash: SHA512
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Mon, 14 Sep 2026 19:07:23 +0000
+Date: Tue, 15 Sep 2026 06:48:41 +0000
 Description: Edge Notes, a notes widget docked to the edge of your screen
 Label: Edge Notes
 Origin: Edge Notes
 Suite: stable
 MD5Sum:
- 402f38c38c9867b6b0fb33164147d0bf              778 main/binary-amd64/Packages
- 41ccb09fd9253dca8646feefbbc1005d              526 main/binary-amd64/Packages.gz
+ df5bec5e46c7fc439430111142eeb3fc             1156 Release
+ b78beaca1a5291e7e1468d156ab8c001             1556 main/binary-amd64/Packages
+ d3488b0a5f0e017532fa815dffbee0fe              721 main/binary-amd64/Packages.gz
 SHA1:
- c5318a23462fa4785944f6f942cb6df19405f94a              778 main/binary-amd64/Packages
- 8f749b2e62243dd0f9975514b166adaf364e56b7              526 main/binary-amd64/Packages.gz
+ e87491a5e972892f109099cdc13c75497b0d39bb             1156 Release
+ 85dce4ff9899083b405e0165169f784dc5d3559b             1556 main/binary-amd64/Packages
+ 6e354aa1385047503d8fb328fecbebd4c75fe10b              721 main/binary-amd64/Packages.gz
 SHA256:
- fef054094403e481e78881ec961a0d80f383d77cdecdd42bfe6d95468f938923              778 main/binary-amd64/Packages
- acf88a89b399a010e677d5053815dd5fb256835db6b3e95fafb6151e12b8fea6              526 main/binary-amd64/Packages.gz
+ 91aae2c7fc71502fbbedb713d07cbd21ec4c3b94f0e430d4be7b220f33daf40c             1156 Release
+ 1b89af0278fa2e86f84ab89568e069af1a83fc6963a372f9f515c1acef431b3e             1556 main/binary-amd64/Packages
+ ed35f664a1ea08f8d29281c6c288ec1038b33338837068efb7329cff7c7d4fe5              721 main/binary-amd64/Packages.gz
 SHA512:
- 76dce847b9e66ad59f9821338ee2eceef69154d46accc55de1786d286d6e595af3db3ec6a7212ae3fb931a20f4c4f9e039e4be48356835b632af5d4fb0d8e309              778 main/binary-amd64/Packages
- 2ba782452e670ee13095a67d37f8e0497b902515566004e4f7cd6da2cf6edde5587bcd131ebe9a1a9b88d6a770c8b3ef4adf460f3d52f3bbdd54d70b517f9160              526 main/binary-amd64/Packages.gz
+ 6659774f5b5ee41ba21b0f3e641e21e2db874d513bf25c886b139e3353e213fcdff2053c13c64dd0944ec2c397562f68d2edf78dc087e1b5d2ad0e429fd2bdd0             1156 Release
+ aa804838d256a08123479f9a98410f317233346d9fea01c4898cd0f9ea8faaec79edf0811cbbe535de69b96da25b38f04410992b8912bc9235863c16ee036f65             1556 main/binary-amd64/Packages
+ eda09a45a54cd5d90a93940295c38fd9426f03041676ff811e6de8cfca335da65c266d114fbe9488c07353423f0d13b08fdd19eb054d48dbca90c29aa9163b56              721 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEunF+qvyBmrqw7WtRek76/12sAHwFAmqoResACgkQek76/12s
-AHyDohAAvIVaABkcHKT2tSV/5P9YrW2EbSxD3WtmsSTCzCkRg1TZY2tBo60XgvAC
-Zv+dtVtDcH8y09T+/M3WpPgQNTxpZJJM579qVep3I/7voxQ6HUPjY6zNSEP8+0ZA
-mSPZud7J5Smf6sH854NQ/LA5v5dRiBDsw7/JKL322MOHXPUClD1jZZ6ohgdJmc9H
-yllMfc9FqPwaUOEraLqzthC8XlAvyBV7TT5rSeCtURL417RX8/WF1Nvm3pm3/EOq
-cdeZUtAKXeXSZ2+MBzyuqftc1w9zb9YxGpG8/mEL0uiqAZiz0/UnmlgPUhHGPVft
-Jcp6YILIB24AusliBngNZDsEDg5ARoPF7GJ2919mJz9hxhBrT8J0pp2T4GbHX1Ke
-fFcXRgWwhzma0L7I8QBsOA7tvrTQ3P++Rbt8PwawTFQpPWnXZMqDlvtS00mipl2v
-6v7LoR/fWAgcjVZQazbST6j4RzMCsV93G1FT4F1UWnyQQZuhO8137zMqYYAT1vhk
-p0TM8bw9AGLHz6ydq2JTwxDvTHV8j4VIPLWCVA6ma/G4rl1IA3D2A9QkYza1pZtE
-EHMpEnNt+kEcP5DhMmuARr2YL8YSP1n5EDEG6aPvtXHyognYlzW4+gQHa5c/drQC
-Be6YlKmYWx75UoJ4pnmzt6hr5lXaY8NDmj8DdHr1Ww6de/9PpKQ=
-=PF/S
+iQIzBAEBCgAdFiEEunF+qvyBmrqw7WtRek76/12sAHwFAmqo6kkACgkQek76/12s
+AHzCRRAAnj4SQE2HdyHaDGQ9cBtIGnfsLS+BMPJ/JULNvS4dHUUgQTh9gvU8rKJ/
+WtZ7uzxHhcVO4v9y+xbjtZuygFQAPWJbC7nYc7lo9F3ai8MahjtaK9THz8Lcdik7
++rjFzLp3bt/EovTn5niWHSX8TZp3i5CuXl+dqvdPCpl+xRza68jtZCCGV5O1UuB+
+N3QKL3LLZnSMr4bWJP6cT1k9x2jEc9DnPqNZVdsSD9DQVDfqd/jSO/4cTGAk1RzY
+hXzqytA6lm7xGXoa9cooDDNV9qGZ0PPVvmLPxHqX+6S5iOsaSVMvKcVbkiDdCa5t
+VPQQpIQTVqi12Zj24g0yXvkG1CpkCWEoclpiWnzd4jtIlKeuPI+8/ay4cp38+JcS
+yMZ7LfEgiaOkdX9mJwMKBcM6QFPdHGW5KW5bk3X2MtoEvaTp0dl8ivs5JT/JsNtA
+stF0mevGSBwXdRlzsG7XG3ZuWoWsZG6TDzNI1NcmcCR6UDU7I9izC30dzExqWMyY
+F/BYIis8FQOGTFkXnhTduM1tivUaxGGng1lOxmlKtYkoPJvS/1eSEtI6dzsvZEma
+stpkHNmIByuu4KFLKvDtkJzGKC5GSQax93ErZYhNXZ87KnFpiuTgTZvdG/17FVJk
+5O2dL/itg1fPFD3tnBFbk4xVJbnkIuMgEP5+Wq/hnlaedBj2zZk=
+=FXv5
 -----END PGP SIGNATURE-----
