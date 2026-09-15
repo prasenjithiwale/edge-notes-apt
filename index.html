@@ -27,6 +27,28 @@
   panel of colour-coded notes slides out; move away and it slides back.
   <a href="https://github.com/prasenjithiwale/edge-notes">About the project</a>.</p>
 
+  <h2>macOS</h2>
+  <p>macOS 12 Monterey or later, Apple silicon and Intel in one build. Version
+  0.0.4. Homebrew is the easier route, and brings new versions
+  with <code>brew upgrade</code>:</p>
+<pre><code>brew tap prasenjithiwale/tap
+brew install --cask edge-notes</code></pre>
+  <p>Or take the disk image and drag the app to Applications:</p>
+  <p class="downloads">
+    <a class="download" href="https://prasenjithiwale.github.io/edge-notes-apt/macos/Edge-Notes_0.0.4_macOS_universal.dmg">Disk image (.dmg) &middot; 4.8 MB</a>
+  </p>
+  <p>These builds are not signed with an Apple Developer ID and are not
+  notarised, so macOS will not open the app while it carries the quarantine flag
+  that anything downloaded gets. <b>The Homebrew cask removes that flag for
+  you</b> — which also means the app is installed without a Gatekeeper check, so
+  install it only if you trust this site. After the <code>.dmg</code>, do it
+  yourself once:</p>
+<pre><code>xattr -dr com.apple.quarantine "/Applications/Edge Notes.app"</code></pre>
+  <p>To check a download first, compare it with
+  <a href="https://prasenjithiwale.github.io/edge-notes-apt/macos/SHA256SUMS">SHA256SUMS</a> (<code>shasum -a 256</code>).
+  To remove the app: <code>brew uninstall --cask edge-notes</code>, or drag it to
+  the Bin.</p>
+
   <h2>Windows</h2>
   <p>Windows 10 and 11, 64-bit. Version 0.0.4.</p>
   <p class="downloads">
