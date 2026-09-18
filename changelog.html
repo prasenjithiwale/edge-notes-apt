@@ -55,6 +55,12 @@
   <p class="lede">Every release of Ledge, newest first, and what changed in it.
   While the version is 0.x a release may change how something behaves.
   <a href="./#download">Downloads are here</a>.</p>
+    <h2 id="0.6.1">0.6.1</h2>
+    <p class="when">2026-09-18</p>
+    <h3>Fixed</h3>
+    <ul>
+      <li><b>The Windows installers are back.</b> 0.6.0&#x27;s encryption work builds OpenSSL from source, and OpenSSL&#x27;s build is a Perl program: on the Windows build machine it picked up the cut-down Perl that comes with Git rather than the complete one, and stopped before it compiled anything. Nothing about the app changed — 0.6.0 simply never produced a Windows build, so this is that build.</li>
+    </ul>
     <h2 id="0.6.0">0.6.0</h2>
     <p class="when">2026-09-18</p>
     <h3>Added</h3>
