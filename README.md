@@ -1,36 +1,42 @@
-# Edge Notes APT repository
+# Ledge downloads
 
-Signed Debian packages of [Edge Notes](https://github.com/prasenjithiwale/edge-notes),
-a notes widget docked to the edge of your screen. Published automatically by the
-Edge Notes release workflow; nothing here is edited by hand.
+Packages of [Ledge](https://github.com/prasenjithiwale/edge-notes), a notes,
+tasks and focus widget docked to the edge of your screen — for macOS, Windows,
+Debian and Ubuntu.
 
-## Install (Debian, Ubuntu, Kubuntu and derivatives, x86_64)
+**The downloads, with install instructions for each platform, are on the site
+this repository serves: <https://prasenjithiwale.github.io/edge-notes-apt/>**
+
+This repository is the publishing target, not the source. It holds the packages,
+a signed APT index, the public key and a generated landing page; it is written by
+the release workflow in the source repository, and nothing in it is edited by
+hand. An edit made here is overwritten by the next release.
+
+## apt, in short
 
 ```bash
 sudo install -d -m 0755 /etc/apt/keyrings
-curl -fsSL https://prasenjithiwale.github.io/edge-notes-apt/key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/edge-notes.gpg
-echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/edge-notes.gpg] https://prasenjithiwale.github.io/edge-notes-apt stable main" \
-  | sudo tee /etc/apt/sources.list.d/edge-notes.list
+curl -fsSL https://prasenjithiwale.github.io/edge-notes-apt/key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/ledge.gpg
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/ledge.gpg] https://prasenjithiwale.github.io/edge-notes-apt stable main" \
+  | sudo tee /etc/apt/sources.list.d/ledge.list
 sudo apt update
-sudo apt install edge-notes
+sudo apt install ledge
 ```
 
-New versions then arrive with `sudo apt update && sudo apt upgrade`.
+Debian 12+, Ubuntu 22.04+, x86_64. New versions then arrive with
+`sudo apt update && sudo apt upgrade`. To remove it:
+`sudo apt remove ledge`, then
+`sudo rm /etc/apt/sources.list.d/ledge.list /etc/apt/keyrings/ledge.gpg`.
 
-Needs Ubuntu 22.04 or newer (or Debian 12 or newer); `libappindicator3-1` comes
-from Ubuntu's universe component.
+## What is where
 
-## Remove
+| Path | What |
+|---|---|
+| `index.html` | The landing page, generated on every release |
+| `screenshots/` | The pictures on that page |
+| `pool/`, `dists/` | The Debian packages and the signed index |
+| `macos/` | The `.dmg`, with `SHA256SUMS` |
+| `windows/` | The `.exe` and `.msi`, with `SHA256SUMS` |
+| `key.gpg` | The public half of the APT signing key |
 
-```bash
-sudo apt remove edge-notes
-sudo rm /etc/apt/sources.list.d/edge-notes.list /etc/apt/keyrings/edge-notes.gpg
-```
-
-## Signing key
-
-`Edge Notes APT repository`, RSA 4096, fingerprint:
-
-    BA717EAAFC819ABAB0ED6B517A4EFAFF5DAC007C
-
-`apt` checks every download against it.
+Older versions of every package are kept.
