@@ -1,24 +1,24 @@
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Thu, 17 Sep 2026 12:05:48 +0000
+Date: Fri, 18 Sep 2026 06:15:25 +0000
 Description: Ledge, a notes widget docked to the edge of your screen
 Label: Ledge
 Origin: Ledge
 Suite: stable
 MD5Sum:
- c931dd88beda0775252ca386191f66fc             1513 Release
- e2ec48a1e997b15d2b6195c051580b81             4844 main/binary-amd64/Packages
- bd511aed90505be85417b1dafbc59134             1529 main/binary-amd64/Packages.gz
+ 381cad3fcc2b8cc8dc4335ada3b1f556             1513 Release
+ 5c1d33d3aa36c9ba8873f4842662a215             5666 main/binary-amd64/Packages
+ b201c37ac638c43ea3f9abaaacd93fe0             1716 main/binary-amd64/Packages.gz
 SHA1:
- 9fca732d70d7c1decbb4fc0850a57c80e5214197             1513 Release
- 80d72a9ea6425814ea788b3410f88e0e0e774952             4844 main/binary-amd64/Packages
- a53ea8b4979f8319bc821e3428a1dbb6aa67e45d             1529 main/binary-amd64/Packages.gz
+ 0ad9927bff74a32311d66732749cd305cf000b18             1513 Release
+ 0a3a867af9022937f6a45e4a002ebd9a55ebe0e2             5666 main/binary-amd64/Packages
+ 3df6987ee2a948b1ef3946df72575eb8a5469bf6             1716 main/binary-amd64/Packages.gz
 SHA256:
- f1cbe72f254bfb84d5be737490ba94fb5d3b6fefdf1651530436d8aa0daa1641             1513 Release
- 1cf08935c536da9663a71fdce87098be766057832421dbfed093b2492395ac16             4844 main/binary-amd64/Packages
- 2b0f8d32f19e5fd5259ff77be7c0f14c7600abc3555448c4adc2de9cdcc19436             1529 main/binary-amd64/Packages.gz
+ c4736aac80896476256dd42f0ccc6f8c2375adfd7c0b06452f0d2b355629d2a4             1513 Release
+ 1f307a537a17a10005521525dca3d10fc1dfac16b73e5e8ae78a740850a42861             5666 main/binary-amd64/Packages
+ d0104e02d9d1fca37c97a24f2fec0a3f03ba819d7b83a69df8c3cb2ea737ff7d             1716 main/binary-amd64/Packages.gz
 SHA512:
- 30a454ccbf999f3f1f9c9e392f995a1d0468b84b97dbef76b5b293aaf892d601092fbb021025fe618a4e8adcd4a415cab8928e25ac0d74dd80bbd1610fc19c94             1513 Release
- 7e1bcd06b76f6d83ce98d7bc46cda0b9c3c19deb8298f03e6c06af16f71685992723442e2fca559cd0830f4b74b418e2d6e62d5bfff26db3b0887d7704bec761             4844 main/binary-amd64/Packages
- 73290f891b7be3ed7ea3145985f868c4590265dae7b5ca6c50d0a1bf22005faea6eb59b89c8593bef4502c5778227c711c9a8391ef157d88389eec796e4c6cc8             1529 main/binary-amd64/Packages.gz
+ 93684c30bbae6501efd9287e8bdadadc7a3e996f17a6b10c076a89d0b74dec08d06edae2cd4af912c075abff34d70e5a04dcd535c9dedcb744b394725855898d             1513 Release
+ 16f35bc803c69ba62cf1a655940ce415b0dc382a73e8cf9e7689e70ba4f7bb8853dd86b058ab9b1b91b82e43f32e0eb058fb2778ca070c2848c166264f0a4504             5666 main/binary-amd64/Packages
+ b586f3c09d1e383eeff6414e55c4813526da49fa5c6394be381ae1a6104d3cf802d4fe6f4588c8c8903a14a1d1d97a35f3636dc6023716ddc3d500649b8f1683             1716 main/binary-amd64/Packages.gz
