@@ -11,6 +11,74 @@ To release, see "Releasing" in the README.
 
 ## [Unreleased]
 
+## [0.7.0] - 2026-09-22
+
+### Added
+
+- **Quick capture.** A global shortcut (⌥⌘Q by default) puts one line on screen
+  wherever you are, with the keyboard already in it: type the thought, press
+  Enter, and it is saved as a note without the panel ever opening. Escape leaves
+  without saving. A line that starts with `[ ]` becomes a **task** instead,
+  through the same quick entry the Tasks tab's add field uses, so
+  `[ ] call the bank @tomorrow 2pm !high` arrives complete.
+- **A note from the clipboard.** A third shortcut opens the same line with
+  whatever you last copied already in it, so you can see and fix what is about to
+  be saved. It ships **unbound**: every ⌥⌘key that reads as "clipboard" is one
+  Finder already uses, and a global shortcut takes it from every app. Bind it in
+  Settings › Shortcuts — or just press ⌘V in the capture field, which does the
+  same thing.
+- **Settings lists all three shortcuts**, each with its own row and its own
+  recorder.
+- **Tables.** `/table` in a note puts a grid in it: type into the cells, add or
+  remove a row or a column from the controls under it. It is stored as an
+  ordinary Markdown pipe table, so a note with a table in it still exports,
+  still pastes into another Markdown app, and is still plain text in the
+  database — and it arrives as a real table when the note is shared as rich
+  text. Alignment written by another app (`:---:`) is kept. The card draws the
+  table too — the first cut described it in words, which made saving a table
+  look like losing it. Rows and columns are added and removed from buttons at
+  the grid's own edges.
+- **Share a note.** A Share button in the note's header offers three ways out:
+  **Copy as rich text**, which is what Apple Notes, OneNote, Mail and Word
+  actually read — headings, lists, links and the pictures themselves all arrive
+  intact, because the images travel embedded rather than as links only this app
+  can follow; **Copy as Markdown**, the note exactly as it is stored, for
+  Obsidian, Bear or an editor; and on macOS **Share…**, the system's own list of
+  apps, which is the only way to reach Messages or AirDrop. The plain-text
+  flavour goes on the clipboard beside the rich one, so an app that takes no
+  formatting still gets something readable.
+- **Pictures can be resized.** Drag the corner of an image in a note; click the
+  corner to put it back to its natural size, or use ← and → when it has the
+  keyboard. The size is stored in the note itself as `![alt|320](url)`, so it
+  survives export and reads the same in the card and the expanded panel.
+- **An empty line says what `/` does.** Put the caret on a blank line in a note
+  and it shows a faded "Type / to add something". The slash menu has been there
+  since 0.4.0 and nothing on screen mentioned it.
+- **`#tags`.** Write `#work` in a note and it becomes a chip under the colour
+  dots; press it to see only those notes, press it again to clear. A tag is
+  drawn as a tag wherever the note is shown, and pressing one in the text
+  filters by it. Tags are plain text — nothing is stored about them, so export
+  and the editor are untouched, and `# heading`, `https://…/#anchor` and
+  anything inside code are deliberately not tags.
+- **Pictures in notes.** Type `/image` in a note to pick a file, paste a
+  screenshot straight in, or drop an image file on the panel and it becomes a
+  note of its own. The file is stored beside the
+  notes and the note itself holds only a link to it, so a note is still plain
+  text — and the picture is served to the panel through the app's own scheme,
+  never from a path the webview names. Files nothing refers to any more are
+  cleaned up at startup.
+- **Drag notes into your own order.** Drop a card where you want it and the list
+  stays that way, newest notes still arriving on top. ⌥↑ and ⌥↓ move the card
+  the keyboard is on, so it is not a mouse-only feature. Dragging is off while
+  the list is filtered or searched — the order would only be of what you can
+  see. "Keep my order" in Settings › General turns it back to most recently
+  edited first.
+
+### Changed
+
+- The new-note shortcut's setting is now one of three; an existing binding is
+  kept as it was.
+
 ## [0.6.1] - 2026-09-18
 
 ### Fixed
