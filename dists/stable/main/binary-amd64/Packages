@@ -258,3 +258,22 @@ SHA512: 19fc12271d51c51ef1b487f9b26fb62e59d0fe92e2697bdc1963b55b6d08d0ab0e6bfe31
 Description: Notes on the edge of your screen
  A notes widget docked to the edge of your screen. Point at the tab and a panel of colour-coded notes slides out; move away and it slides back. Notes are stored locally in SQLite.
 
+Package: ledge
+Architecture: amd64
+Version: 0.7.1
+Priority: optional
+Maintainer: Ledge
+Installed-Size: 11928
+Provides: edge-notes
+Depends: libappindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Conflicts: edge-notes
+Replaces: edge-notes
+Filename: pool/main/l/ledge/ledge_0.7.1_amd64.deb
+Size: 5067274
+MD5sum: 60f8f2f65f5454d57306aba66ef16687
+SHA1: f08a1ed38efe1e0dc6cd991106715f74af13c2f1
+SHA256: bff4733b9b0cb143a4163ad31e3535c5ee1e02ee9963526094b471bd5a7088ef
+SHA512: 62db7241b80de68200adafafe1b25bed17fb844c41dd99adf56b22c11b447cf7adad6193055af281655e50b96da81d68bfd1b814526235c4da3ab662f7f61857
+Description: Notes on the edge of your screen
+ A notes widget docked to the edge of your screen. Point at the tab and a panel of colour-coded notes slides out; move away and it slides back. Notes are stored locally in SQLite.
+

@@ -55,6 +55,17 @@
   <p class="lede">Every release of Ledge, newest first, and what changed in it.
   While the version is 0.x a release may change how something behaves.
   <a href="./#download">Downloads are here</a>.</p>
+    <h2 id="0.7.1">0.7.1</h2>
+    <p class="when">2026-09-23</p>
+    <h3>Added</h3>
+    <ul>
+      <li><b>A running pomodoro counts down on the menu bar, on a lit red field.</b> Start a session and the time left appears beside the tray icon — white on red, so it reads as a timer rather than as another menu — and it is legible without opening anything. It clears when the session is paused or ends. macOS only: Windows has no tray title, and on Linux only some panels show one, where it is the plain text.</li>
+    </ul>
+    <h3>Fixed</h3>
+    <ul>
+      <li><b>A table keeps its shape when it is saved.</b> The editor gives every column an equal share of the note&#x27;s width and a fixed row height; the reader sized the same table to its contents, so saving it looked like it had shrunk. Both read the same three numbers now.</li>
+      <li><b>A table&#x27;s grid lines are visible.</b> They were drawn in the card&#x27;s own edge colour, which is transparent on every note colour but the colourless one, so a saved table read as two loose lines of words. It has a neutral surface of its own now, like a code block. A picture&#x27;s hairline was drawn the same way.</li>
+    </ul>
     <h2 id="0.7.0">0.7.0</h2>
     <p class="when">2026-09-22</p>
     <h3>Added</h3>

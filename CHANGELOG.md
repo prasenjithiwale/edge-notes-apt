@@ -11,6 +11,28 @@ To release, see "Releasing" in the README.
 
 ## [Unreleased]
 
+## [0.7.1] - 2026-09-23
+
+### Added
+
+- **A running pomodoro counts down on the menu bar, on a lit red field.** Start
+  a session and the time left appears beside the tray icon — white on red, so it
+  reads as a timer rather than as another menu — and it is legible without
+  opening anything. It clears when the session is paused or ends. macOS only:
+  Windows has no tray title, and on Linux only some panels show one, where it is
+  the plain text.
+
+### Fixed
+
+- **A table keeps its shape when it is saved.** The editor gives every column an
+  equal share of the note's width and a fixed row height; the reader sized the
+  same table to its contents, so saving it looked like it had shrunk. Both read
+  the same three numbers now.
+- **A table's grid lines are visible.** They were drawn in the card's own edge
+  colour, which is transparent on every note colour but the colourless one, so a
+  saved table read as two loose lines of words. It has a neutral surface of its
+  own now, like a code block. A picture's hairline was drawn the same way.
+
 ## [0.7.0] - 2026-09-22
 
 ### Added
