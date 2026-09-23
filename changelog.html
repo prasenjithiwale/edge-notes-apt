@@ -55,6 +55,16 @@
   <p class="lede">Every release of Ledge, newest first, and what changed in it.
   While the version is 0.x a release may change how something behaves.
   <a href="./#download">Downloads are here</a>.</p>
+    <h2 id="0.8.0">0.8.0</h2>
+    <p class="when">2026-09-23</p>
+    <h3>Added</h3>
+    <ul>
+      <li><b>The panel can wear a colour.</b> Settings › Appearance › Panel colour picks one of the sixteen note colours, and the header, the toolbar and the focus timer&#x27;s ring take it. &quot;No colour&quot; is the default and leaves the chrome exactly as it was.</li>
+    </ul>
+    <h3>Fixed</h3>
+    <ul>
+      <li><b>A locked note can be copied.</b> Its text was selectable, but the copy key only arrives when the panel owns the keyboard, and a panel opened by hover deliberately does not — so on Linux, where the window manager may never hand focus over, there was no way to get a locked note out at all. Locked cards and the expanded reader now have a Copy button, which copies through Rust and needs no focus.</li>
+    </ul>
     <h2 id="0.7.1">0.7.1</h2>
     <p class="when">2026-09-23</p>
     <h3>Added</h3>

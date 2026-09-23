@@ -11,6 +11,24 @@ To release, see "Releasing" in the README.
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-09-23
+
+### Added
+
+- **The panel can wear a colour.** Settings › Appearance › Panel colour picks
+  one of the sixteen note colours, and the header, the toolbar and the focus
+  timer's ring take it. "No colour" is the default and leaves the chrome exactly
+  as it was.
+
+### Fixed
+
+- **A locked note can be copied.** Its text was selectable, but the copy key
+  only arrives when the panel owns the keyboard, and a panel opened by hover
+  deliberately does not — so on Linux, where the window manager may never hand
+  focus over, there was no way to get a locked note out at all. Locked cards and
+  the expanded reader now have a Copy button, which copies through Rust and
+  needs no focus.
+
 ## [0.7.1] - 2026-09-23
 
 ### Added
