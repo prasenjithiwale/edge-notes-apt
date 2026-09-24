@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ledge — notes on the edge of your screen</title>
-<meta name="description" content="Ledge is a small notes, tasks and focus widget docked to the edge of your screen. Free, local-only, for macOS, Windows, Debian and Ubuntu.">
+<meta name="description" content="Ledge is a small notes, tasks, focus and clipboard widget docked to the edge of your screen, made of frosted glass. Free, encrypted, local-only, for macOS, Windows, Debian and Ubuntu.">
 <meta property="og:title" content="Ledge — notes on the edge of your screen">
 <meta property="og:description" content="Point at the tab and a panel of colour-coded notes slides out; move away and it slides back. Free, local-only, for macOS, Windows and Linux.">
 <meta property="og:type" content="website">
@@ -44,8 +44,9 @@
 
 <header class="top">
   <div class="wrap top-inner">
-    <a class="wordmark" href="./"><img class="mark" src="icon.png" width="20" height="20" alt=""> Ledge</a>
+    <a class="wordmark" href="./"><img class="mark" src="icon.png" width="22" height="22" alt=""> <span class="script">Ledge</span></a>
     <nav>
+      <a href="#watch" class="hide-sm">Watch</a>
       <a href="#features">Features</a>
       <a href="#keys" class="hide-sm">Shortcuts</a>
       <a href="#download">Download</a>
@@ -59,21 +60,38 @@
 </header>
 
 <main id="top">
+<script>
+  // The clips play only while they are on screen, and not at all for a reader
+  // who has asked for less motion: they keep their poster and their controls.
+  document.addEventListener("DOMContentLoaded", function () {
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var clips = document.querySelectorAll(".reel video");
+    if (reduce || !("IntersectionObserver" in window)) { return; }
+    var seen = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var video = entry.target;
+        if (entry.isIntersecting) { video.play().catch(function () {}); } else { video.pause(); }
+      });
+    }, { threshold: 0.4 });
+    clips.forEach(function (video) { seen.observe(video); });
+  });
+</script>
 
 <div class="hero wrap">
-  <img class="app-icon" src="icon.png" width="78" height="78" alt="">
+  <img class="app-icon" src="icon.png" width="76" height="76" alt="">
+  <p class="hero-script script" aria-hidden="true">Ledge</p>
   <span class="eyebrow">Version 0.10.1 &middot; macOS, Windows, Linux</span>
   <h1>Notes on the edge<br>of your screen.</h1>
   <p class="lede">A small tab sits against the screen edge, above whatever you are
-  working in. Point at it and a panel of colour-coded notes slides out. Move away
-  and it slides back.</p>
+  working in. Point at it and a panel of frosted glass slides out, with your notes
+  lit by their colours. Move away and it slides back.</p>
   <p class="cta">
     <a class="button" href="#download">Download for free</a>
     <a class="button secondary" href="#features">See what it does</a>
   </p>
-  <p class="under-cta">No account, no sync, no telemetry. Your notes are a SQLite file on your own disk.</p>
+  <p class="under-cta">No account, no sync, no telemetry. Your notes are an encrypted file on your own disk.</p>
   <figure class="hero-shot">
-    <img src="screenshots/hero.png" width="1920" height="840" alt="The Ledge panel open on the right-hand edge of a screen, over a document, showing four colour-coded notes." loading="eager">
+    <img src="screenshots/hero.png" width="1920" height="860" alt="The Ledge panel open on the right-hand edge of a screen: frosted glass over the desktop, the word Notes written in calligraphy, and notes lit by their own colours." loading="eager">
   </figure>
 </div>
 
@@ -92,113 +110,152 @@
         you are typing in, and it slides away by itself the moment you leave.</p>
       </div>
       <div class="card">
-        <h3>Yours, on your disk</h3>
-        <p>Notes are Markdown in a local database, and can be exported as plain
-        files whenever you like. The app asks the network for nothing.</p>
+        <h3>Yours, and locked</h3>
+        <p>Notes are Markdown in a local database, encrypted with a key kept in
+        your system's keychain. The only thing the app asks the network is
+        whether there is a new version.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="band" id="watch">
+  <div class="wrap">
+    <p class="kicker script">See it move</p>
+    <h2>Glass that answers you</h2>
+    <p class="sub">Short clips of the real app, on invented notes.</p>
+    <div class="reels">
+      <figure class="reel">
+        <div class="reel-frame">
+          <video src="videos/open.mp4" poster="videos/open.jpg" muted loop playsinline controls preload="none" aria-label="The panel opening on hover, moving through its four tabs, and sliding away."></video>
+        </div>
+        <figcaption><span class="script">At a glance</span> Point at the tab and the glass slides out; leave and it slides away.</figcaption>
+      </figure>
+      <figure class="reel">
+        <div class="reel-frame">
+          <video src="videos/focus.mp4" poster="videos/focus.jpg" muted loop playsinline controls preload="none" aria-label="A focus session starting, then a break: the light in the panel turns from warm to teal."></video>
+        </div>
+        <figcaption><span class="script">In a new light</span> Start a session and the panel warms; take a break and it cools.</figcaption>
+      </figure>
+      <figure class="reel">
+        <div class="reel-frame">
+          <video src="videos/write.mp4" poster="videos/write.jpg" muted loop playsinline controls preload="none" aria-label="A new note being written: a heading, a line of text and a checklist."></video>
+        </div>
+        <figcaption><span class="script">In a moment</span> A note is a press away, and it saves as you type.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
 <section class="band soft" id="features">
   <div class="wrap">
-    <h2>Three tabs, one panel</h2>
-    <p class="sub">Notes, tasks and a focus timer — the things you reach for while
-    you are in the middle of something else.</p>
+    <p class="kicker script">Four tabs</p>
+    <h2>One panel of glass</h2>
+    <p class="sub">Notes, tasks, a focus timer and what you just copied: the things
+    you reach for while you are in the middle of something else.</p>
 
     <section class="feature ">
       <div class="feature-text">
-        <h3>Notes, where you left them</h3>
-        <p>Every note is a card in one column, in the colour you gave it — sixteen of
-     them, plus none at all. The newest sits at the top unless you lock it, and a
-     locked note stays put and opens read-only. The dots under the tabs filter the
-     list by colour, and <kbd>&#8984;F</kbd> searches it.</p>
-     <p>Deleting is undoable twice over: a note goes to a toast with an
-     <b>Undo</b> in it, and after that it waits in the <b>Archive</b> at the foot
-     of the panel — everything deleted in the last thirty days, notes and tasks
-     together, each with a Restore beside it.</p>
+        <p class="kicker script">Notes</p>
+        <h3>Notes, lit by their colour</h3>
+        <p>Every note is a card of the same frosted glass as the panel, and its colour
+     is light rather than paint: a glow from its corner and a thin lit line along
+     its top. Sixteen colours, plus none at all. The dots under the tabs filter by
+     colour, a <code>#tag</code> in a note filters by tag, and <kbd>&#8984;F</kbd>
+     searches.</p>
+     <p>Deleting is undoable twice over: a toast with an <b>Undo</b> in it, and
+     then the <b>Archive</b> at the foot of the panel, which keeps everything
+     deleted in the last thirty days.</p>
       </div>
-      <figure class="shot "><img src="screenshots/notes.png" alt="The Notes tab: coloured cards with checkboxes, code and bold text." loading="lazy"></figure>
+      <figure class="shot "><img src="screenshots/notes.png" alt="The Notes tab: glass cards, each lit by its own colour, with a checklist, tags and a colour filter." loading="lazy"></figure>
     </section>
 
     <section class="feature wide">
       <div class="feature-text">
-        <h3>Write in rich text; keep plain Markdown</h3>
-        <p>The editor is rich text — headings with <kbd>&#8984;&#8997;1</kbd>, bold
-     with <kbd>&#8984;B</kbd>, lists with <kbd>&#8984;&#8679;8</kbd>, or type
-     <kbd>/</kbd> for a menu of blocks. A note's first line is its name in the
-     list, so a Heading 1 there is how it gets a title. What is stored is still
-     Markdown, byte for byte, so a note is a file you could have written by
-     hand.</p>
-     <p>Code goes in a fenced block with a language of its own and syntax colour for
-     sixteen of them. Need room? Expand the note and the panel itself grows.</p>
+        <p class="kicker script">Write</p>
+        <h3>Rich text in, plain Markdown out</h3>
+        <p>Headings with <kbd>&#8984;&#8997;1</kbd>, bold with <kbd>&#8984;B</kbd>,
+     lists with <kbd>&#8984;&#8679;8</kbd>, or type <kbd>/</kbd> for a menu of
+     blocks: code with syntax colour for sixteen languages, tables, pictures you
+     paste or drop in. What is stored is still Markdown, byte for byte.</p>
+     <p>Need room? Expand the note and the panel itself grows into a writing
+     sheet.</p>
       </div>
-      <figure class="shot wide"><img src="screenshots/expanded.png" alt="A note expanded to fill a large panel, with checkboxes, a numbered list and a shell code block." loading="lazy"></figure>
+      <figure class="shot wide"><img src="screenshots/expanded.png" alt="A note expanded to fill a large panel, with headings, a checklist and a table." loading="lazy"></figure>
     </section>
 
     <section class="feature ">
       <div class="feature-text">
+        <p class="kicker script">Tasks</p>
         <h3>Tasks that know what day it is</h3>
-        <p>Tasks are their own list, not checkboxes buried in a note: In progress at
-     the top, then Today, Tomorrow, Upcoming and Someday, with Done and Cancelled
-     folded away at the bottom.</p>
-     <p>Type the details straight into the add field — <code>@tomorrow</code>,
-     <code>2pm</code>, <code>!high</code> — and see them read back as chips before
+        <p>Tasks are their own list: In progress at the top, then Today, Tomorrow,
+     Upcoming and Someday, with Done and Cancelled folded away.</p>
+     <p>Type the details straight into the add field (<code>@tomorrow</code>,
+     <code>2pm</code>, <code>!high</code>) and see them read back as chips before
      you press Return.</p>
       </div>
-      <figure class="shot "><img src="screenshots/tasks.png" alt="The Tasks tab, with an In progress section at the top, then Today, Tomorrow, Upcoming, Someday, Done and Cancelled." loading="lazy"></figure>
+      <figure class="shot "><img src="screenshots/tasks.png" alt="The Tasks tab: In progress, Today, Tomorrow and Someday, with priority flags and due times." loading="lazy"></figure>
     </section>
 
     <section class="feature ">
       <div class="feature-text">
+        <p class="kicker script">Details</p>
         <h3>Four statuses, not one tick</h3>
-        <p>A task is <b>Open</b>, <b>In progress</b>, <b>Done</b> or <b>Cancelled</b>.
-     The box in the row still finishes one in a press — that is the thing you do
-     all day — and the sheet is where a task is started or dropped. Something you
-     decided against is closed without being counted as work you did.</p>
-     <p>Underneath: priority, a due date and time, and a repeat that moves the
-     task on when you tick it rather than completing it. Anything due can raise a
-     system notification, and a task can be handed straight to the focus timer.</p>
+        <p>A task is <b>Open</b>, <b>In progress</b>, <b>Done</b> or <b>Cancelled</b>,
+     and its sheet glows in the colour of its priority. Underneath: a due date and
+     time, a repeat that moves the task on when you tick it, notes, and a door
+     straight to the focus timer.</p>
       </div>
-      <figure class="shot "><img src="screenshots/task-details.png" alt="A task's details: status, priority, due date and time, repeat, notes, and a Focus on this button." loading="lazy"></figure>
+      <figure class="shot "><img src="screenshots/task-details.png" alt="A task's sheet, glowing red for high priority: status, priority, due date and time, repeat and notes." loading="lazy"></figure>
     </section>
 
     <section class="feature ">
       <div class="feature-text">
-        <h3>A focus timer that survives being ignored</h3>
-        <p>A pomodoro with your own lengths, a long break every so often, and a
-     count of what you finished today. Point it at a task and the session has a
-     name.</p>
+        <p class="kicker script">Focus</p>
+        <h3>A timer that changes the light</h3>
+        <p>A pomodoro in a glass sphere. While a session runs the whole panel warms;
+     on a break it turns teal, and on the long one, indigo. Presets for 25/5, 50/10
+     and 90/20, a timeline of what you finished today, and a countdown in the
+     menu bar.</p>
      <p>It keeps an end time rather than counting down, so a session that ran out
-     while the panel was closed and the machine asleep still ends when it should —
-     and a small light on the tab tells you it is running without opening
-     anything.</p>
+     while the panel was closed still ends when it should.</p>
       </div>
-      <figure class="shot "><img src="screenshots/focus.png" alt="The Focus tab with a pomodoro timer running at 24:35, working on the task Cut 0.4.0." loading="lazy"></figure>
+      <figure class="shot "><img src="screenshots/focus.png" alt="The Focus tab mid-session: a glass sphere inside a glowing red ring, the time left, and today's sessions on a timeline." loading="lazy"></figure>
     </section>
 
     <section class="feature ">
       <div class="feature-text">
+        <p class="kicker script">Clips</p>
+        <h3>What you copied, a moment ago</h3>
+        <p>The last fifty texts you copied, so the one before last is one press away.
+     They are kept in memory only, never written to disk, and anything a password
+     manager marks as secret is never kept at all.</p>
+      </div>
+      <figure class="shot "><img src="screenshots/clips.png" alt="The Clips tab: the last few copied texts as glass tiles, the one on the clipboard lit." loading="lazy"></figure>
+    </section>
+
+    <section class="feature ">
+      <div class="feature-text">
+        <p class="kicker script">Yours</p>
         <h3>It goes where you want it</h3>
         <p>Left edge or right, on whichever monitor, opening on hover or on a click.
-     The tab comes in three sizes and two finishes, the panel in whatever width
-     suits you, and there is a <b>Keep open</b> pin for when it should stop sliding
-     away.</p>
-     <p>Light, dark, or whatever the system is doing. A tray icon and a global
-     shortcut — <kbd>&#8984;&#8997;N</kbd> by default — open it with a new note
-     ready.</p>
+     Pick a colour and it becomes the light under the glass. There is a <b>Keep
+     open</b> pin, a tray icon, and a global shortcut
+     (<kbd>&#8984;&#8997;N</kbd>) that opens it with a new note ready.</p>
       </div>
-      <figure class="shot "><img src="screenshots/settings.png" alt="Settings, showing theme, tab appearance, tab size, panel translucency and the docked edge." loading="lazy"></figure>
+      <figure class="shot "><img src="screenshots/settings.png" alt="Settings: the panel colour, light or dark, the tab's look and size, and the docked edge." loading="lazy"></figure>
     </section>
 
     <section class="feature ">
       <div class="feature-text">
+        <p class="kicker script">Night</p>
         <h3>Dark, too</h3>
-        <p>Every colour in the palette has a dark counterpart, checked against WCAG
-     AA contrast by a test rather than by eye. The chrome stays neutral; the notes
-     are the only colour on screen.</p>
+        <p>In dark mode the glass smokes over and each note's colour glows instead of
+     tinting, so sixteen colours still read as sixteen. Every text colour is held
+     to WCAG AA contrast by a test rather than by eye.</p>
       </div>
-      <figure class="shot "><img src="screenshots/dark.png" alt="The same notes in dark mode." loading="lazy"></figure>
+      <figure class="shot "><img src="screenshots/dark.png" alt="The same notes in dark mode: smoked glass, with each note's colour glowing brighter." loading="lazy"></figure>
     </section>
   </div>
 </section>
@@ -345,8 +402,10 @@ sudo apt install ledge</code></pre>
 <section class="band soft">
   <div class="wrap narrow">
     <h2>What it does not do</h2>
-    <p>There is no account, no cloud and no sync: notes live in a SQLite file in
-    the app's own data folder, and nothing leaves the machine. The window that
+    <p>There is no account, no cloud and no sync: notes live in an encrypted
+    SQLite file in the app's own data folder, and nothing leaves the machine. The
+    clipboard history is kept in memory only, and the panel is hidden from screen
+    shares and screenshots unless you say otherwise. The window that
     draws the panel is given no filesystem, shell or database access of its own —
     everything stateful is handled by the native side, and links open in your
     browser rather than inside the app.</p>
@@ -362,7 +421,7 @@ sudo apt install ledge</code></pre>
 
 <footer>
   <div class="wrap foot-row">
-    <span>Ledge 0.10.1</span>
+    <span><span class="script">Ledge</span> &nbsp;0.10.1</span>
     <span class="spacer"></span>
     <a href="#download">Download</a>
     <a href="changelog.html">Changelog</a>

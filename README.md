@@ -40,7 +40,8 @@ Debian 12+, Ubuntu 22.04+, x86_64. New versions then arrive with
 | Path | What |
 |---|---|
 | `index.html` | The landing page, generated on every release |
-| `screenshots/` | The pictures on that page |
+| `screenshots/`, `videos/` | The pictures and clips on that page |
+| `fonts/` | The calligraphy face the page is written in (SIL OFL) |
 | `pool/`, `dists/` | The Debian packages and the signed index |
 | `macos/` | The `.dmg`, with `SHA256SUMS` |
 | `windows/` | The `.exe` and `.msi`, with `SHA256SUMS` |
