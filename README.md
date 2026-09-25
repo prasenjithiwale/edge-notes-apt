@@ -6,16 +6,15 @@ your screen — for macOS, Windows, Debian and Ubuntu.
 **The downloads, with install instructions for each platform, are on the site
 this repository serves: <https://prasenjithiwale.github.io/edge-notes-apt/>**
 
-**Found a bug?** [Open an issue here](https://github.com/prasenjithiwale/edge-notes-apt/issues) — this is where they are
-tracked. Please say which version (Settings › About in the app) and which
+**Found a bug?** [Open an issue in the source repository](https://github.com/prasenjithiwale/edge-notes/issues). Please say which version (Settings › About in the app) and which
 system. Every release and what changed in it is in
 [CHANGELOG.md](CHANGELOG.md), also published as a page at
 <https://prasenjithiwale.github.io/edge-notes-apt/changelog.html>.
 
 This repository is the publishing target, not the source: it holds the packages,
 a signed APT index, the public key, the changelog and a generated landing page.
-It is written by the release workflow in a separate, private source repository,
-and nothing in it is edited by hand — an edit made here is overwritten by the
+It is written by the release workflow in the source repository,
+<https://github.com/prasenjithiwale/edge-notes> (MIT licensed), and nothing in it is edited by hand — an edit made here is overwritten by the
 next release. Ledge is not open to contributions; see the site for what that
 means.
 

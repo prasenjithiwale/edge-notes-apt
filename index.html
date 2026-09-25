@@ -387,12 +387,14 @@ sudo apt install ledge</code></pre>
 <section class="band">
   <div class="wrap narrow">
     <h2>Open source, closed to contributions</h2>
-    <p>Ledge is free and open source, and it is not open to contributions: no
-    pull requests, and no feature requests taken as a queue. This is one person's
+    <p>Ledge is free and open source under the <a href="https://github.com/prasenjithiwale/edge-notes/blob/master/LICENSE">MIT
+    licence</a>, and <a href="https://github.com/prasenjithiwale/edge-notes">the code is on GitHub</a>. It is not
+    open to contributions: no pull requests, and no feature requests taken as a
+    queue. This is one person's
     app, built to one set of opinions about what it should be, and keeping it
     that way is most of why it stays small and why it does what it does.</p>
     <p>Bug reports are the exception and they are welcome — if something is
-    broken, <a href="https://github.com/prasenjithiwale/edge-notes-apt/issues">open an issue</a> and say what happened, with the
+    broken, <a href="https://github.com/prasenjithiwale/edge-notes/issues">open an issue</a> and say what happened, with the
     version and system from Settings › About. Everything else about a release —
     what changed, what is known to be broken — is in the
     <a href="changelog.html">changelog</a>.</p>
@@ -417,6 +419,43 @@ sudo apt install ledge</code></pre>
   </div>
 </section>
 
+<section class="band" id="signing">
+  <div class="wrap narrow">
+    <p class="kicker script">Signed</p>
+    <h2>Code signing policy</h2>
+    <p>Free code signing provided by <a href="https://signpath.io">SignPath.io</a>,
+    certificate by <a href="https://signpath.org">SignPath Foundation</a>. Ledge
+    has applied to the programme; until it is approved the Windows installers are
+    unsigned, and Windows says so the first time.</p>
+    <p>Only what the <a href="https://github.com/prasenjithiwale/edge-notes/blob/master/.github/workflows/release.yml">release
+    workflow</a> builds from a tagged commit in <a href="https://github.com/prasenjithiwale/edge-notes">the public
+    repository</a> is signed, and every signing request is approved by hand. The
+    macOS and Linux packages are signed separately: the Debian repository with the
+    key shown under Download, and every update with the app's own updater key.</p>
+    <div class="note">
+      <p><b>Committers and reviewers:</b> <a href="https://github.com/prasenjithiwale">Prasenjit Hiwale</a><br>
+      <b>Approvers:</b> <a href="https://github.com/prasenjithiwale">Prasenjit Hiwale</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="band soft" id="privacy">
+  <div class="wrap narrow">
+    <p class="kicker script">Private</p>
+    <h2>Privacy</h2>
+    <p>Your notes, tasks, focus sessions and clipboard history never leave your
+    computer. There is no account, no analytics and no crash reporting.</p>
+    <p>Ledge makes one kind of network request on its own: a minute after it
+    starts and once a day after that, it downloads a small file,
+    <code>updates/latest.json</code>, from this site to see whether there is a new
+    version. Nothing about you or your notes is sent with it; like any web
+    request, GitHub, which hosts this site, sees your IP address. A new version
+    is only downloaded when you choose to install it. Copies installed with
+    <code>apt</code> do not check at all, since apt updates them.</p>
+    <p>A link in a note opens in your browser, and only when you click it.</p>
+  </div>
+</section>
+
 </main>
 
 <footer>
@@ -425,7 +464,10 @@ sudo apt install ledge</code></pre>
     <span class="spacer"></span>
     <a href="#download">Download</a>
     <a href="changelog.html">Changelog</a>
-    <a href="https://github.com/prasenjithiwale/edge-notes-apt/issues">Report a problem</a>
+    <a href="https://github.com/prasenjithiwale/edge-notes">Source</a>
+    <a href="#signing">Code signing</a>
+    <a href="#privacy">Privacy</a>
+    <a href="https://github.com/prasenjithiwale/edge-notes/issues">Report a problem</a>
   </div>
 </footer>
 
