@@ -1,31 +1,31 @@
 {
-  "version": "0.10.2",
+  "version": "0.10.3",
   "notes": "What changed: https://prasenjithiwale.github.io/edge-notes-apt/changelog.html",
-  "pub_date": "2026-09-27T19:12:18Z",
+  "pub_date": "2026-09-27T19:54:42Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://prasenjithiwale.github.io/edge-notes-apt/updates/Ledge_0.10.2_macOS_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYkNBZ0M0R20wSG9FRVc1anZhQmFNQzFDcjI2aEVOelA5WERGUkVWV2RuWlFrYlZrclVrZXByVzdGK1FjZDZwaEFjR0FjRUZpTWtpRFF2SkFqTmxURk8yMkV6bDhhS0FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTMzNzkzCWZpbGU6TGVkZ2UuYXBwLnRhci5nego2TGpmTkh1dGx4S1hCTk9UV2RtRGM0VGxHaVVHaG5nNjRHOHN5bVdtbUtlSmZjMHdhTENFT0NiOEJrUFEySTNYV1VMbVBBVVYrOCs4eWx4dzJWQ2JDQT09Cg=="
+      "url": "https://prasenjithiwale.github.io/edge-notes-apt/updates/Ledge_0.10.3_macOS_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYkNBZ0M0R20wSHRXN1FZN1FkMmp2TE1ncDZ1MWZhQlgrTTZJejhaSnA4SVhwVXE1TWprbCt1aTFaT2tjVGtkL0k3WThpVXBmYVpUaFN5bFhFZ0xFRUs2VGlmTHpmU0FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTM2Nzc3CWZpbGU6TGVkZ2UuYXBwLnRhci5negoyMUVxRVVRcnltNXJRYXI1cmQyaFRTWTA1UThwWEgrR3llUnRmSktGN3F4VmRQTXNmTnBOcGpCNm4rNnRnUDVKSWZBM25xSUFpcEJQWU9TeVpDa2dDZz09Cg=="
     },
     "darwin-x86_64": {
-      "url": "https://prasenjithiwale.github.io/edge-notes-apt/updates/Ledge_0.10.2_macOS_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYkNBZ0M0R20wSG9FRVc1anZhQmFNQzFDcjI2aEVOelA5WERGUkVWV2RuWlFrYlZrclVrZXByVzdGK1FjZDZwaEFjR0FjRUZpTWtpRFF2SkFqTmxURk8yMkV6bDhhS0FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTMzNzkzCWZpbGU6TGVkZ2UuYXBwLnRhci5nego2TGpmTkh1dGx4S1hCTk9UV2RtRGM0VGxHaVVHaG5nNjRHOHN5bVdtbUtlSmZjMHdhTENFT0NiOEJrUFEySTNYV1VMbVBBVVYrOCs4eWx4dzJWQ2JDQT09Cg=="
+      "url": "https://prasenjithiwale.github.io/edge-notes-apt/updates/Ledge_0.10.3_macOS_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYkNBZ0M0R20wSHRXN1FZN1FkMmp2TE1ncDZ1MWZhQlgrTTZJejhaSnA4SVhwVXE1TWprbCt1aTFaT2tjVGtkL0k3WThpVXBmYVpUaFN5bFhFZ0xFRUs2VGlmTHpmU0FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTM2Nzc3CWZpbGU6TGVkZ2UuYXBwLnRhci5negoyMUVxRVVRcnltNXJRYXI1cmQyaFRTWTA1UThwWEgrR3llUnRmSktGN3F4VmRQTXNmTnBOcGpCNm4rNnRnUDVKSWZBM25xSUFpcEJQWU9TeVpDa2dDZz09Cg=="
     },
     "windows-x86_64-nsis": {
-      "url": "https://prasenjithiwale.github.io/edge-notes-apt/updates/Ledge_0.10.2_windows_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYkNBZ0M0R20wSHJjZWxKYm5jcTJjakhSZGNGbmJUbmh0NUVMVkh3aTh2d2w5OFM0ZjlZZSttZ09uekRzaW9PMmMxUlI4dmVtZ0lKQ1AzZmJEb0ZlZVBsbTQ0Qkl3NmdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTM2MDQ1CWZpbGU6TGVkZ2VfMC4xMC4yX3g2NC1zZXR1cC5leGUKSVZNKzhQbXNpVTdvQVBBQW1aZVJJN3dlcDVUYll1QWFya3cvQnc4MloyQWxNcDNuRHNoSDg4N051UXNLMWJEUTFxeHUzNEFMWG1YUTljV29SYng0REE9PQo="
+      "url": "https://prasenjithiwale.github.io/edge-notes-apt/updates/Ledge_0.10.3_windows_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYkNBZ0M0R20wSHBldU03N29KalA5RzhyaCt3NzBiMTc0Wm56OENFKzI5ZTRFclFHd1JOYXlkSlBZWGxYTjBvQmFhMXJDSU80UzF5MFJjQndJUHhWbVlLUFFtRnRtRHdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTM4NjQxCWZpbGU6TGVkZ2VfMC4xMC4zX3g2NC1zZXR1cC5leGUKTHZtLzVCSE8rbmpiVWN2MW9aaG1Rci9hNUJ5bDFuMGFxTGVEZkxRZFhaY3lZNlFhcXFobE9zSFVOU25KZTFwU090M0dOTTlLa09DdGhXdjZWcmFTQkE9PQo="
     },
     "windows-x86_64": {
-      "url": "https://prasenjithiwale.github.io/edge-notes-apt/updates/Ledge_0.10.2_windows_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYkNBZ0M0R20wSHJjZWxKYm5jcTJjakhSZGNGbmJUbmh0NUVMVkh3aTh2d2w5OFM0ZjlZZSttZ09uekRzaW9PMmMxUlI4dmVtZ0lKQ1AzZmJEb0ZlZVBsbTQ0Qkl3NmdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTM2MDQ1CWZpbGU6TGVkZ2VfMC4xMC4yX3g2NC1zZXR1cC5leGUKSVZNKzhQbXNpVTdvQVBBQW1aZVJJN3dlcDVUYll1QWFya3cvQnc4MloyQWxNcDNuRHNoSDg4N051UXNLMWJEUTFxeHUzNEFMWG1YUTljV29SYng0REE9PQo="
+      "url": "https://prasenjithiwale.github.io/edge-notes-apt/updates/Ledge_0.10.3_windows_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYkNBZ0M0R20wSHBldU03N29KalA5RzhyaCt3NzBiMTc0Wm56OENFKzI5ZTRFclFHd1JOYXlkSlBZWGxYTjBvQmFhMXJDSU80UzF5MFJjQndJUHhWbVlLUFFtRnRtRHdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTM4NjQxCWZpbGU6TGVkZ2VfMC4xMC4zX3g2NC1zZXR1cC5leGUKTHZtLzVCSE8rbmpiVWN2MW9aaG1Rci9hNUJ5bDFuMGFxTGVEZkxRZFhaY3lZNlFhcXFobE9zSFVOU25KZTFwU090M0dOTTlLa09DdGhXdjZWcmFTQkE9PQo="
     },
     "windows-x86_64-msi": {
-      "url": "https://prasenjithiwale.github.io/edge-notes-apt/updates/Ledge_0.10.2_windows_x64.msi",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYkNBZ0M0R20wSGp1eGJyd3d2d2xMYWZKVm9xeS9VaGF2dXhHOUtsWHJWaGpUWnJNNktldTlrbEt0YTRvZjhiT0c2SWZSOHNvN1V4WjMvR0E3LzcyRGFRSTNUNDc2U1FzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTM2MDQ1CWZpbGU6TGVkZ2VfMC4xMC4yX3g2NF9lbi1VUy5tc2kKb3NndXgvQjBuYUkwb2ZnOGs3NmhtWkNLQ0E3MWJURTFES0hzblhwVUFXSUhTNjBvcE51LytsN2xaQ1FFbUlWK0tIUkR6SllzU0J4ODloOVBKZ0FOQXc9PQo="
+      "url": "https://prasenjithiwale.github.io/edge-notes-apt/updates/Ledge_0.10.3_windows_x64.msi",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYkNBZ0M0R20wSGx6V1c2SDhsWnRlbGJIbUFYM04yY1dKWjhZYlpWZXBMdVhJUUtPNzBkQ2ZxNmVjMTg5ODhYeVBjOWszQk5pTklsV1owQmZmNnFhOUpDUmh1UGV6bHdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTM4NjQxCWZpbGU6TGVkZ2VfMC4xMC4zX3g2NF9lbi1VUy5tc2kKbTIrRUQ0TWk2VTFCUzBMeFBaeEVzT09kTUtRQkI4VjI2UUJFbnM5bFFaQmxwYjFZc25nR1UxckpCQTY5YjQrakxFbVNiK3JpOEJYVlI2T0FsRFV4QVE9PQo="
     },
     "linux-x86_64-appimage": {
-      "url": "https://prasenjithiwale.github.io/edge-notes-apt/updates/Ledge_0.10.2_linux_x86_64.AppImage",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYkNBZ0M0R20wSGdsMWFPNnJpUXlpZVFrakt4Z1ZxNlpsZlFFR3c1SXdQWGlEbTNLU1U4NkpCc1YxUWs3SW9KSFI2RCtFU3Q4bFYzNEVpRTBZY2dBMXNML1NyQkxmeHdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTM1MDc0CWZpbGU6TGVkZ2VfMC4xMC4yX2FtZDY0LkFwcEltYWdlClU4U1JQSG9KSzNWUXpGc1JNZlA3UTZDM2JOeG1iQWpwQVJCR2loUS9LYTlSY2VLV3hPSWxyQmFhcGhxZ0lmendlaERiV3VTZzc5anZ3TXM1WFlVVERBPT0K"
+      "url": "https://prasenjithiwale.github.io/edge-notes-apt/updates/Ledge_0.10.3_linux_x86_64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYkNBZ0M0R20wSGo4NVhGeXBaM3NpQ1ZmZVllS3p5ZmgyVURPdEoxRnBTcWF1aTNQYW1sS1JicnFORnQzS1VaVUZBaGNVZTlhVDl4UW5IQVR4dGk1VERDUmhvTzMrdkFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTM3Mzg0CWZpbGU6TGVkZ2VfMC4xMC4zX2FtZDY0LkFwcEltYWdlCnBIOEUySG1rSElKZXZkZVptV0hRdEszN1FPSjF1NVNZRGNRZFdFMHpxWW9WZzNOb2NSUll6d2gwQnErUUtuL204Ti84QnhmUlh2YitEYVBDbktiL0FBPT0K"
     }
   }
 }
