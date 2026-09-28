@@ -128,6 +128,26 @@ Description: Notes on the edge of your screen
 
 Package: ledge
 Architecture: amd64
+Version: 0.10.4
+Priority: optional
+Maintainer: Ledge
+Installed-Size: 13781
+Provides: edge-notes
+Depends: libappindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Recommends: libgtk-layer-shell0
+Conflicts: edge-notes
+Replaces: edge-notes
+Filename: pool/main/l/ledge/ledge_0.10.4_amd64.deb
+Size: 6125578
+MD5sum: ede5bca3cf4fb7544911c2213039f4ef
+SHA1: c8b450911a8c6f90a8796ed8b41d4d453ea1178a
+SHA256: 3c53ce6ff48f5cfb5f9aa318f339e67949f78b32036d874e3e3887a6f6d8e561
+SHA512: df735b4a95ed7277e60d8dc028e95e67fc468701c00056e56462b9929d3ba3aee2b2e82682bbfb88f9525585c4a49cde18ea9751f089655697eb9f1f0eebc16d
+Description: Notes on the edge of your screen
+ A notes widget docked to the edge of your screen. Point at the tab and a panel of colour-coded notes slides out; move away and it slides back. Notes are stored locally in SQLite.
+
+Package: ledge
+Architecture: amd64
 Version: 0.2.0
 Priority: optional
 Maintainer: Ledge
