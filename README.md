@@ -3,16 +3,15 @@
 Packages of **Ledge**, a notes, tasks and focus widget docked to the edge of
 your screen — for macOS, Windows, Debian and Ubuntu.
 
-**The downloads, with install instructions for each platform, are on the site
-this repository serves: <https://prasenjithiwale.github.io/edge-notes-apt/>**
+**The downloads, with install instructions for each platform, are on Ledge's
+page: <https://prasenjithiwale.github.io/folio/ledge/>** This repository serves the files it links to.
 
 **Found a bug?** [Open an issue in the source repository](https://github.com/prasenjithiwale/edge-notes/issues). Please say which version (Settings › About in the app) and which
-system. Every release and what changed in it is in
-[CHANGELOG.md](CHANGELOG.md), also published as a page at
-<https://prasenjithiwale.github.io/edge-notes-apt/changelog.html>.
+system. Every release and what changed in it is at
+<https://prasenjithiwale.github.io/folio/ledge/changelog.html>.
 
 This repository is the publishing target, not the source: it holds the packages,
-a signed APT index, the public key, the changelog and a generated landing page.
+a signed APT index, the public key and the updater feed.
 It is written by the release workflow in the source repository,
 <https://github.com/prasenjithiwale/edge-notes> (MIT licensed), and nothing in it is edited by hand — an edit made here is overwritten by the
 next release. Ledge is not open to contributions; see the site for what that
@@ -38,12 +37,11 @@ Debian 12+, Ubuntu 22.04+, x86_64. New versions then arrive with
 
 | Path | What |
 |---|---|
-| `index.html` | The landing page, generated on every release |
-| `screenshots/`, `videos/` | The pictures and clips on that page |
-| `fonts/` | The calligraphy face the page is written in (SIL OFL) |
+| `index.html`, `changelog.html` | Redirects to the page's new address |
 | `pool/`, `dists/` | The Debian packages and the signed index |
 | `macos/` | The `.dmg`, with `SHA256SUMS` |
 | `windows/` | The `.exe` and `.msi`, with `SHA256SUMS` |
 | `key.gpg` | The public half of the APT signing key |
+| `updates/` | The feed installed copies check for new versions |
 
 Older versions of every package are kept.
